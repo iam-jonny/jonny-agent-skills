@@ -1,0 +1,20 @@
+{
+  "name": "jonny-agent-skills",
+  "owner": {
+    "name": "iam-jonny"
+  },
+  "metadata": {
+    "description": "Claude Code marketplace for Jonny's local agent skills.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "product-management-tools",
+      "source": "./plugins/product-management-tools",
+      "description": "Product management skills for creating and reviewing MVV, business requirements, PRDs, PBIs, priorities, and roadmaps.",
+      "author": {
+        "name": "iam-jonny"
+      }
+    }
+  ]
+}

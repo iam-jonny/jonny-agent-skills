@@ -1,10 +1,12 @@
 # Jonny Agent Skills
 
-Local Codex plugin and skill definitions for product management work.
+Local Codex and Claude Code plugin and skill definitions for product
+management work.
 
 ## Overview
 
-This repository contains a Codex plugin named `product-management-tools`.
+This repository contains a plugin named `product-management-tools` that can be
+used from Codex and Claude Code.
 The plugin provides focused skills for creating and reviewing common product
 management artifacts:
 
@@ -19,7 +21,7 @@ The plugin is intended to help turn rough product context, strategy notes,
 stakeholder requests, and draft documents into clearer, more decision-ready
 artifacts.
 
-## Plugin
+## Codex Plugin
 
 The plugin lives at:
 
@@ -35,6 +37,45 @@ plugins/product-management-tools/.codex-plugin/plugin.json
 
 Codex uses this manifest to discover the plugin name, display metadata, and
 skills directory.
+
+## Claude Code Marketplace
+
+This repository also includes a Claude Code marketplace manifest:
+
+```text
+.claude-plugin/marketplace.json
+```
+
+The marketplace exposes the `product-management-tools` plugin from:
+
+```text
+plugins/product-management-tools
+```
+
+The Claude Code plugin manifest is:
+
+```text
+plugins/product-management-tools/.claude-plugin/plugin.json
+```
+
+After this repository is public, Claude Code users can add the marketplace:
+
+```text
+/plugin marketplace add iam-jonny/jonny-agent-skills
+```
+
+Then install the plugin:
+
+```text
+/plugin install product-management-tools@jonny-agent-skills
+```
+
+For local testing from a checkout of this repository:
+
+```text
+/plugin marketplace add ./path/to/jonny-agent-skills
+/plugin install product-management-tools@jonny-agent-skills
+```
 
 ## Skills
 
@@ -75,9 +116,12 @@ Use product-management-tools pbi-prioritize to rank these backlog items.
 
 ## Local Installation
 
-This repository is structured as a local Codex plugin source. To use the plugin,
-install or reference the `plugins/product-management-tools` directory from a
-Codex environment that supports local plugins.
+This repository is structured as a local plugin source. To use the plugin in
+Codex, install or reference the `plugins/product-management-tools` directory
+from a Codex environment that supports local plugins.
+
+To use the plugin in Claude Code, add this repository as a marketplace and then
+install `product-management-tools` from that marketplace.
 
 The plugin display name is:
 

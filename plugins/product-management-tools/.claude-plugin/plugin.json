@@ -1,0 +1,17 @@
+{
+  "name": "product-management-tools",
+  "version": "0.1.0",
+  "description": "Product management skills for creating and reviewing MVV, business requirements, PRDs, PBIs, priorities, and roadmaps.",
+  "author": {
+    "name": "iam-jonny"
+  },
+  "repository": "https://github.com/iam-jonny/jonny-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "prd",
+    "roadmap",
+    "backlog"
+  ],
+  "skills": "./skills/"
+}
