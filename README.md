@@ -100,6 +100,19 @@ plugins/product-management-tools/skills/<skill-name>/SKILL.md
 Some skills also include `agents/openai.yaml` metadata for Codex UI display
 names, short descriptions, and default prompts.
 
+## Product Management Reference
+
+Shared product management guidance lives at:
+
+```text
+plugins/product-management-tools/references/product-management-principles.md
+```
+
+This reference summarizes textbook-style product management concepts and
+practical operating guidance for discovery, delivery, metrics, prioritization,
+roadmaps, and common failure modes. Each skill applies the relevant parts of
+that reference and adds artifact-specific review or creation guidance.
+
 ## Example Prompts
 
 ```text
@@ -141,5 +154,7 @@ product-management-tools
 - Prefer concrete review criteria and decision-ready outputs.
 - Mark assumptions clearly when source context is incomplete.
 - Avoid generic language that could apply to any product or team.
+- Put shared product management concepts in `references/` and keep skill files
+  focused on how those concepts apply to a specific artifact.
 - Update `.codex-plugin/plugin.json` when adding, renaming, or repositioning
   plugin-level capabilities.

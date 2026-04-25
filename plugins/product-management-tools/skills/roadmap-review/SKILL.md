@@ -5,9 +5,34 @@ description: Review product roadmaps for strategy fit, outcome orientation, sequ
 
 # Roadmap Review
 
+## Shared Reference
+
+Use `../../references/product-management-principles.md` for general product
+management principles. Apply the prioritization, metrics, roadmap, and common
+failure mode sections when reviewing roadmaps.
+
 ## Review Stance
 
 Assess whether the roadmap is a credible decision tool, not just a feature calendar. Push on strategy, sequencing, capacity, and the story stakeholders will infer.
+
+## Product Management Principles
+
+- A credible roadmap connects initiatives to strategy and measurable outcomes.
+- Sequencing should reflect dependencies, learning needs, value, risk, capacity,
+  and timing.
+- Roadmaps should communicate confidence and commitment level explicitly.
+- A roadmap should help stakeholders make tradeoffs, not only see dates.
+
+## Practical Operating Guidance
+
+- Test whether the roadmap answers: why this, why now, why in this order, and
+  what can change.
+- Compare promised work against team capacity and known dependency load.
+- Flag missing operational, platform, quality, security, compliance, analytics,
+  migration, support, and GTM work.
+- Look for places where exploratory bets are presented as commitments.
+- Check whether success metrics and decision checkpoints are specific enough to
+  govern continuation, pivot, or cancellation.
 
 ## Checklist
 
@@ -18,6 +43,15 @@ Assess whether the roadmap is a credible decision tool, not just a feature calen
 - Optionality: uncertain bets have checkpoints and exit criteria.
 - Communication: audience can understand what is committed, tentative, or exploratory.
 - Missing work: platform, migration, quality, compliance, enablement, and support work are visible when relevant.
+
+## Common Failure Modes
+
+- Initiatives do not map to explicit goals or themes.
+- The roadmap optimizes stakeholder appeasement instead of product outcomes.
+- Sequencing ignores dependencies or learning order.
+- Capacity assumptions are not credible.
+- Confidence levels are absent, so all items look equally committed.
+- The roadmap omits the story different audiences will infer.
 
 ## Output
 
