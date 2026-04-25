@@ -1,0 +1,4 @@
+interface:
+  display_name: "MVV Review"
+  short_description: "Review mission, vision, and values for clarity and usefulness."
+  default_prompt: "Review this MVV and identify gaps, risks, and improvements."

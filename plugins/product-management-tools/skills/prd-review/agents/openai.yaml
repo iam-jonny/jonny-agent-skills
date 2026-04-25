@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Review"
+  short_description: "Review PRDs for clarity, completeness, and execution risk."
+  default_prompt: "Review this PRD and provide actionable findings."

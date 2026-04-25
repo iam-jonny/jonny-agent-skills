@@ -1,0 +1,4 @@
+interface:
+  display_name: "Roadmap Create"
+  short_description: "Create outcome-oriented product roadmaps."
+  default_prompt: "Create a product roadmap from this strategy, constraints, and backlog."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PBI Prioritize"
+  short_description: "Prioritize backlog items using explicit product criteria."
+  default_prompt: "Prioritize these PBIs and explain the tradeoffs."

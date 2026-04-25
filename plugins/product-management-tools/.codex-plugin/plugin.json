@@ -1,0 +1,40 @@
+{
+  "name": "product-management-tools",
+  "version": "0.1.0",
+  "description": "Product management skills for creating and reviewing MVV, business requirements, PRDs, PBIs, priorities, and roadmaps.",
+  "author": {
+    "name": "Local",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "prd",
+    "roadmap",
+    "backlog"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product Management Tools",
+    "shortDescription": "Create and review core product management artifacts.",
+    "longDescription": "A local Codex plugin with focused skills for mission, vision, values, business requirements, PRDs, product backlog items, prioritization, and product roadmaps.",
+    "developerName": "Local",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Review"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Create a PRD for this product idea.",
+      "Review this roadmap for sequencing and feasibility.",
+      "Prioritize these PBIs and explain the tradeoffs."
+    ]
+  }
+}
