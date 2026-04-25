@@ -31,6 +31,29 @@ Separate:
 Do not let a stakeholder request become a requirement until the underlying
 problem, owner, priority, and success measure are clear.
 
+## Intake Synthesis
+
+Raw product inputs are usually mixed: facts, opinions, decisions, requests,
+risks, objections, solution ideas, and action items often appear together.
+Synthesis should preserve that distinction.
+
+When working from meeting notes, transcripts, OCR, chat logs, or stakeholder
+messages, separate:
+
+- Confirmed facts: what appears known.
+- Claims: what someone believes or reported.
+- Decisions: what was explicitly agreed.
+- Open decisions: what still needs an owner or approval.
+- Problems: user, customer, business, or operational pain.
+- Solution ideas: proposed ways to address the problem.
+- Requirements candidates: statements that may become requirements after
+  validation.
+- Action items: who needs to do what by when.
+
+When attribution matters, keep speaker or stakeholder role attached to the
+signal. Do not turn the loudest or most recent comment into the central product
+requirement without checking evidence and decision authority.
+
 ## Delivery
 
 Delivery artifacts should help design, engineering, QA, data, GTM, support, and
@@ -39,6 +62,32 @@ acceptance criteria, dependencies, risks, rollout approach, and instrumentation.
 
 Good delivery plans preserve optionality where uncertainty is high and create
 commitment where confidence is high.
+
+## Alignment and Approval
+
+Product documents create value only when they help the organization decide and
+act. Alignment work should clarify the decision to make, the decision owner,
+approvers, contributors, blockers, informed parties, and approval criteria.
+
+Separate content quality from alignment state:
+
+- Content quality: whether the artifact is clear, complete, testable, and
+  grounded in evidence.
+- Alignment state: whether the right stakeholders understand, agree, object,
+  approve, or need more information.
+
+Useful alignment outputs include:
+
+- Stakeholder map.
+- Decision questions.
+- Pre-read checklist.
+- Review meeting agenda.
+- Decision log.
+- Approval conditions.
+- Follow-up message with owners and dates.
+
+Silence is not approval. A review meeting should decide, narrow, assign, or
+explicitly defer.
 
 ## Metrics
 
@@ -91,9 +140,11 @@ exploratory, or dependent on learning.
 
 - Starting from a solution without validating the problem.
 - Confusing stakeholder urgency with customer or business value.
+- Treating raw notes or meeting comments as final requirements.
 - Writing goals that describe shipping instead of changed outcomes.
 - Hiding non-goals, constraints, or unresolved decisions.
 - Using metrics that cannot change a decision.
 - Treating estimates as commitments before uncertainty is reduced.
 - Ranking work without acknowledging dependencies or capacity.
 - Publishing a roadmap that different audiences interpret differently.
+- Treating silence as agreement during BRD or PRD approval.

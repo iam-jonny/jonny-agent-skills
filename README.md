@@ -7,12 +7,13 @@ management work.
 
 This repository contains a plugin named `product-management-tools` that can be
 used from Codex and Claude Code.
-The plugin provides focused skills for creating and reviewing common product
-management artifacts:
+The plugin provides focused skills for turning messy product inputs into
+decision-ready product artifacts and alignment steps:
 
+- Meeting notes, transcripts, paper-note OCR, and stakeholder requests
+- BRDs and business requirements
+- PRDs and approval plans
 - Mission, vision, and values
-- Business requirements
-- Product requirements documents
 - Product backlog items
 - Backlog prioritization
 - Product roadmaps
@@ -20,6 +21,34 @@ management artifacts:
 The plugin is intended to help turn rough product context, strategy notes,
 stakeholder requests, and draft documents into clearer, more decision-ready
 artifacts.
+
+## Workflow Model
+
+The skills are designed to work together in layers:
+
+- Intake layer: structure messy inputs before creating artifacts.
+- Definition layer: create BRDs, PRDs, MVV drafts, and other core artifacts.
+- Review layer: check artifact quality and readiness.
+- Alignment layer: plan approvals, synthesize stakeholder feedback, and record
+  decisions.
+- Execution layer: refine PBIs, prioritize work, and create roadmaps.
+- Orchestration layer: diagnose ambiguous requests and recommend the right
+  sequence of skills.
+
+Common workflow:
+
+```text
+meeting notes / paper notes / transcript / stakeholder request
+  -> product-orchestrator
+  -> product-intake-synthesize
+  -> brd-create
+  -> business-requirements-review
+  -> artifact-alignment
+  -> prd-create
+  -> prd-review
+  -> stakeholder-review-synthesize
+  -> pbi-review / pbi-prioritize / roadmap-create
+```
 
 ## Codex Plugin
 
@@ -81,6 +110,11 @@ For local testing from a checkout of this repository:
 
 | Skill | Purpose |
 | --- | --- |
+| `product-orchestrator` | Diagnose ambiguous PM requests and recommend the right skill sequence. |
+| `product-intake-synthesize` | Turn messy notes, transcripts, OCR, and stakeholder requests into structured PM context. |
+| `brd-create` | Create business requirements documents before PRD work. |
+| `artifact-alignment` | Plan stakeholder alignment, approvals, review meetings, and decision logs. |
+| `stakeholder-review-synthesize` | Turn stakeholder feedback into decisions, required edits, action items, and follow-up. |
 | `mvv-create` | Create mission, vision, and values drafts. |
 | `mvv-review` | Review MVV drafts for clarity, specificity, and usefulness. |
 | `business-requirements-review` | Review business requirements for outcomes, constraints, risks, and readiness. |
@@ -116,11 +150,27 @@ that reference and adds artifact-specific review or creation guidance.
 ## Example Prompts
 
 ```text
+Use product-management-tools product-orchestrator to diagnose this product request and choose the next steps.
+```
+
+```text
+Use product-management-tools product-intake-synthesize to organize these meeting notes into product context.
+```
+
+```text
+Use product-management-tools brd-create to create a BRD from this stakeholder request.
+```
+
+```text
 Use product-management-tools mvv-create to create an MVV for this product.
 ```
 
 ```text
 Use product-management-tools prd-review to review this PRD and identify blockers.
+```
+
+```text
+Use product-management-tools artifact-alignment to create an approval plan for this PRD.
 ```
 
 ```text

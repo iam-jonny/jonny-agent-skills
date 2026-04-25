@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Orchestrator"
+  short_description: "Route ambiguous product work to the right PM skill sequence."
+  default_prompt: "Diagnose this product management request and recommend the best skill sequence."

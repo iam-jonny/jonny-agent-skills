@@ -1,7 +1,7 @@
 {
   "name": "product-management-tools",
-  "version": "0.1.0",
-  "description": "Product management skills for creating and reviewing MVV, business requirements, PRDs, PBIs, priorities, and roadmaps.",
+  "version": "0.2.0",
+  "description": "Product management skills for turning messy inputs into aligned BRDs, PRDs, PBIs, priorities, and roadmaps.",
   "author": {
     "name": "iam-jonny"
   },
@@ -9,6 +9,8 @@
   "license": "MIT",
   "keywords": [
     "product-management",
+    "alignment",
+    "brd",
     "prd",
     "roadmap",
     "backlog"

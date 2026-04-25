@@ -8,17 +8,46 @@
 このリポジトリには `product-management-tools` というプラグインが含まれています。
 Codex と Claude Code の両方で利用できるように、各ツール向けのメタデータを用意しています。
 
-このプラグインは、以下のようなプロダクトマネジメント成果物の作成・レビューを支援します。
+このプラグインは、雑多なプロダクト情報を、意思決定に使える成果物と
+合意形成プロセスへ整理することを支援します。
 
+- 会議メモ、音声書き起こし、紙メモの OCR、ステークホルダー要望
+- BRD とビジネス要件
+- PRD と承認計画
 - ミッション・ビジョン・バリュー
-- ビジネス要件
-- PRD
 - Product Backlog Item
 - バックログの優先順位付け
 - プロダクトロードマップ
 
 粗いアイデア、戦略メモ、ステークホルダーからの要望、ドラフト文書を、
 より明確で意思決定に使える成果物へ整理することを目的としています。
+
+## ワークフローモデル
+
+各スキルは、単体でも使えますが、プロダクトマネジメントの流れに沿って
+組み合わせて使えるように設計しています。
+
+- Intake layer: 雑多な入力を、成果物作成前の構造化された文脈に整理する。
+- Definition layer: BRD、PRD、MVV などの中核成果物を作成する。
+- Review layer: 成果物の品質と準備状況を確認する。
+- Alignment layer: 承認、レビュー会、意思決定ログ、ステークホルダー合意を支援する。
+- Execution layer: PBI の整理、優先順位付け、ロードマップ化を支援する。
+- Orchestration layer: 曖昧な依頼を診断し、適切なスキル順序を提案する。
+
+典型的な流れは次の通りです。
+
+```text
+会議メモ / 紙メモ / 音声書き起こし / ステークホルダー要望
+  -> product-orchestrator
+  -> product-intake-synthesize
+  -> brd-create
+  -> business-requirements-review
+  -> artifact-alignment
+  -> prd-create
+  -> prd-review
+  -> stakeholder-review-synthesize
+  -> pbi-review / pbi-prioritize / roadmap-create
+```
 
 ## Codex プラグイン
 
@@ -79,6 +108,11 @@ plugins/product-management-tools/.claude-plugin/plugin.json
 
 | Skill | 目的 |
 | --- | --- |
+| `product-orchestrator` | 曖昧な PM 依頼を診断し、適切なスキル順序を提案する。 |
+| `product-intake-synthesize` | 会議メモ、書き起こし、OCR、ステークホルダー要望を構造化された PM 文脈に整理する。 |
+| `brd-create` | PRD 作成前に、ビジネス要件文書を作成する。 |
+| `artifact-alignment` | ステークホルダー合意、承認、レビュー会、意思決定ログを計画する。 |
+| `stakeholder-review-synthesize` | ステークホルダーのフィードバックを、決定事項、必要な修正、アクション、フォローアップに整理する。 |
 | `mvv-create` | ミッション・ビジョン・バリューのドラフトを作成する。 |
 | `mvv-review` | MVV を明確性、具体性、意思決定への有用性の観点でレビューする。 |
 | `business-requirements-review` | ビジネス要件を成果、制約、リスク、準備状況の観点でレビューする。 |
@@ -116,11 +150,27 @@ Prioritization、Roadmaps、よくある失敗パターンです。
 ## プロンプト例
 
 ```text
+product-management-tools の product-orchestrator を使って、この PM 依頼の進め方を診断してください。
+```
+
+```text
+product-management-tools の product-intake-synthesize を使って、この会議メモを PM 文脈に整理してください。
+```
+
+```text
+product-management-tools の brd-create を使って、このステークホルダー要望から BRD を作成してください。
+```
+
+```text
 product-management-tools の mvv-create を使って、このプロダクトの MVV を作成してください。
 ```
 
 ```text
 product-management-tools の prd-review を使って、この PRD の課題を洗い出してください。
+```
+
+```text
+product-management-tools の artifact-alignment を使って、この PRD の承認計画を作成してください。
 ```
 
 ```text

@@ -1,7 +1,7 @@
 {
   "name": "product-management-tools",
-  "version": "0.1.0",
-  "description": "Product management skills for creating and reviewing MVV, business requirements, PRDs, PBIs, priorities, and roadmaps.",
+  "version": "0.2.0",
+  "description": "Product management skills for turning messy inputs into aligned BRDs, PRDs, PBIs, priorities, and roadmaps.",
   "author": {
     "name": "Local",
     "email": "",
@@ -12,6 +12,8 @@
   "license": "MIT",
   "keywords": [
     "product-management",
+    "alignment",
+    "brd",
     "prd",
     "roadmap",
     "backlog"
@@ -19,20 +21,25 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Product Management Tools",
-    "shortDescription": "Create and review core product management artifacts.",
-    "longDescription": "A local Codex plugin with focused skills for mission, vision, values, business requirements, PRDs, product backlog items, prioritization, and product roadmaps.",
+    "shortDescription": "Synthesize, create, review, align, and sequence product work.",
+    "longDescription": "A local Codex plugin with focused skills for product intake synthesis, BRD and PRD creation, stakeholder alignment, mission, vision, values, product backlog items, prioritization, and product roadmaps.",
     "developerName": "Local",
     "category": "Productivity",
     "capabilities": [
       "Interactive",
       "Write",
-      "Review"
+      "Review",
+      "Synthesize"
     ],
     "websiteURL": "",
     "privacyPolicyURL": "",
     "termsOfServiceURL": "",
     "defaultPrompt": [
+      "Diagnose this product management request and recommend the right skill sequence.",
+      "Synthesize these meeting notes into structured product context.",
+      "Create a BRD for this initiative.",
       "Create a PRD for this product idea.",
+      "Create an alignment plan for this PRD.",
       "Review this roadmap for sequencing and feasibility.",
       "Prioritize these PBIs and explain the tradeoffs."
     ]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BRD Create"
+  short_description: "Create business requirements documents before PRD work."
+  default_prompt: "Create a BRD from this product context, notes, and stakeholder input."
