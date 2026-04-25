@@ -1,0 +1,19 @@
+{
+  "name": "project-management-tools",
+  "version": "0.1.0",
+  "description": "Project management skills for turning messy inputs into aligned charters, plans, risks, status reports, change decisions, and retrospectives.",
+  "author": {
+    "name": "iam-jonny"
+  },
+  "repository": "https://github.com/iam-jonny/jonny-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "project-management",
+    "planning",
+    "risk",
+    "stakeholders",
+    "status-reporting",
+    "change-management"
+  ],
+  "skills": "./skills/"
+}

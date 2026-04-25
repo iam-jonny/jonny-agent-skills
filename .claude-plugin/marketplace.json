@@ -15,6 +15,14 @@
       "author": {
         "name": "iam-jonny"
       }
+    },
+    {
+      "name": "project-management-tools",
+      "source": "./plugins/project-management-tools",
+      "description": "Project management skills for turning messy inputs into aligned charters, plans, risks, status reports, change decisions, and retrospectives.",
+      "author": {
+        "name": "iam-jonny"
+      }
     }
   ]
 }

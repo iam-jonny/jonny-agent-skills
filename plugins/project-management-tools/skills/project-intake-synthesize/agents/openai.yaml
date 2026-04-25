@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Intake Synthesize"
+  short_description: "Turn messy notes, transcripts, and requests into structured project context."
+  default_prompt: "Synthesize this messy project input into structured context and recommend the next artifact."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Orchestrator"
+  short_description: "Route ambiguous project work to the right PM skill sequence."
+  default_prompt: "Diagnose this project management request and recommend the best skill sequence."

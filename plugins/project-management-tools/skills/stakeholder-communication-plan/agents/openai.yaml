@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stakeholder Communication Plan"
+  short_description: "Plan project stakeholder updates, decisions, and escalations."
+  default_prompt: "Create a stakeholder communication plan for this project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Risk Register Create"
+  short_description: "Create risk registers with owners, triggers, and mitigations."
+  default_prompt: "Create a risk register from this project context, plan, or status update."

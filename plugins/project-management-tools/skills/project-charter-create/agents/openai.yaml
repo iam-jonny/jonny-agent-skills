@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Charter Create"
+  short_description: "Create project charters before detailed planning."
+  default_prompt: "Create a project charter from this context, notes, and stakeholder input."
