@@ -1,0 +1,43 @@
+{
+  "name": "document-intake-tools",
+  "version": "0.1.0",
+  "description": "Document and meeting intake skills for classifying meeting files, gathering local context, and routing outputs to draft, update, or finalize workflows.",
+  "author": {
+    "name": "iam-jonny",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "https://github.com/iam-jonny/jonny-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "document-intake",
+    "meeting-notes",
+    "transcripts",
+    "context-discovery",
+    "documentation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Document Intake Tools",
+    "shortDescription": "Classify meeting files, gather context, and route document outputs.",
+    "longDescription": "A local Codex plugin with skills for meeting type classification, context discovery from local repositories, artifact lifecycle routing, and drafting meeting outputs for product or project workflows.",
+    "developerName": "iam-jonny",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Review",
+      "Synthesize"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Classify this meeting transcript and ask only the context questions needed.",
+      "Find local documents that may be relevant to this meeting.",
+      "Route this transcript to draft, update, or finalize the right artifact.",
+      "Create a Slack-ready meeting summary from this transcript."
+    ]
+  }
+}

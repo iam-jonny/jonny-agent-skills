@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting Output Draft"
+  short_description: "Draft Slack, email, or docs-ready meeting outputs."
+  default_prompt: "Draft the requested meeting output for this destination and audience."

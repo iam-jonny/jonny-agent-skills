@@ -14,6 +14,8 @@ Code.
 | --- | --- |
 | `product-management-tools` | Turn messy product inputs into aligned BRDs, PRDs, PBIs, priorities, and roadmaps. |
 | `project-management-tools` | Turn messy project inputs into aligned charters, plans, risks, status reports, change decisions, and retrospectives. |
+| `folder-monitor-tools` | Detect and triage new local files for downstream document and meeting workflows. |
+| `document-intake-tools` | Classify meeting files, gather local context, and route outputs to Draft, Update, Finalize, or Summary workflows. |
 
 ## Product Management Tools
 
@@ -112,7 +114,7 @@ plugins/product-management-tools/.claude-plugin/plugin.json
 After this repository is public, Claude Code users can add the marketplace:
 
 ```text
-/plugin marketplace add iam-jonny/jonny-agent-skills
+/plugin marketplace add https://github.com/iam-jonny/jonny-agent-skills
 ```
 
 Then install a plugin:
@@ -120,6 +122,8 @@ Then install a plugin:
 ```text
 /plugin install product-management-tools@jonny-agent-skills
 /plugin install project-management-tools@jonny-agent-skills
+/plugin install folder-monitor-tools@jonny-agent-skills
+/plugin install document-intake-tools@jonny-agent-skills
 ```
 
 For local testing from a checkout of this repository:
@@ -128,6 +132,8 @@ For local testing from a checkout of this repository:
 /plugin marketplace add ./path/to/jonny-agent-skills
 /plugin install product-management-tools@jonny-agent-skills
 /plugin install project-management-tools@jonny-agent-skills
+/plugin install folder-monitor-tools@jonny-agent-skills
+/plugin install document-intake-tools@jonny-agent-skills
 ```
 
 ## Skills
@@ -220,6 +226,64 @@ Shared project management guidance lives at:
 plugins/project-management-tools/references/project-management-principles.md
 ```
 
+## Folder Monitor Tools
+
+`folder-monitor-tools` handles local file detection and triage. It is intended
+to stay separate from document interpretation. It can be used for transcript
+drops, local meeting note folders, document export folders, and manual or
+scheduled scans.
+
+The bundled scripts are:
+
+```text
+plugins/folder-monitor-tools/scripts/scan_folder.py
+plugins/folder-monitor-tools/scripts/mark_processed.py
+```
+
+Example manual scan:
+
+```bash
+python3 plugins/folder-monitor-tools/scripts/scan_folder.py ~/Documents/Zoom \
+  --recursive \
+  --state-file .folder-monitor-state.json \
+  --stability-seconds 60
+```
+
+Folder monitor skills:
+
+| Skill | Purpose |
+| --- | --- |
+| `folder-monitor-orchestrator` | Choose scan, triage, or monitoring policy workflows. |
+| `folder-scan` | Scan folders for stable, unprocessed files. |
+| `new-file-triage` | Triage detected files and route them to document intake. |
+| `monitoring-policy-create` | Create folder monitoring policies and operating rules. |
+
+## Document Intake Tools
+
+`document-intake-tools` handles the layer after file detection. It classifies
+meeting/document inputs, asks minimal context questions, searches local docs
+when needed, and routes work to Draft, Update, Finalize, or Summary only.
+
+Common workflow:
+
+```text
+new transcript / memo / export
+  -> folder-monitor-tools
+  -> document-intake-tools
+  -> product-management-tools or project-management-tools
+```
+
+Document intake skills:
+
+| Skill | Purpose |
+| --- | --- |
+| `document-intake-orchestrator` | Route meeting and document intake to the right workflow. |
+| `meeting-type-classify` | Classify meetings and ask concise confirmation questions. |
+| `context-discovery` | Identify missing context needed before processing. |
+| `local-doc-context-gather` | Find relevant local docs for meeting and artifact context. |
+| `artifact-lifecycle-router` | Choose Draft, Update, Finalize, or Summary only. |
+| `meeting-output-draft` | Draft Slack, email, or docs-ready meeting outputs. |
+
 ## Example Prompts
 
 ```text
@@ -266,6 +330,14 @@ Use project-management-tools project-charter-create to create a charter from thi
 Use project-management-tools status-report-create to create a sponsor-ready status report.
 ```
 
+```text
+Use folder-monitor-tools folder-scan to scan my Zoom transcript folder for new files.
+```
+
+```text
+Use document-intake-tools document-intake-orchestrator to classify this transcript and route it to the right workflow.
+```
+
 ## Local Installation
 
 This repository is structured as a local plugin source. To use the plugin in
@@ -286,6 +358,8 @@ The plugin package name is:
 ```text
 product-management-tools
 project-management-tools
+folder-monitor-tools
+document-intake-tools
 ```
 
 ## Development Notes

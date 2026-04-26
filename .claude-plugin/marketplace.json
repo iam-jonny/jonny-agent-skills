@@ -23,6 +23,22 @@
       "author": {
         "name": "iam-jonny"
       }
+    },
+    {
+      "name": "folder-monitor-tools",
+      "source": "./plugins/folder-monitor-tools",
+      "description": "Folder monitoring skills and scripts for detecting new local files, triaging them, and routing them to downstream document or meeting workflows.",
+      "author": {
+        "name": "iam-jonny"
+      }
+    },
+    {
+      "name": "document-intake-tools",
+      "source": "./plugins/document-intake-tools",
+      "description": "Document and meeting intake skills for classifying meeting files, gathering local context, and routing outputs to draft, update, or finalize workflows.",
+      "author": {
+        "name": "iam-jonny"
+      }
     }
   ]
 }

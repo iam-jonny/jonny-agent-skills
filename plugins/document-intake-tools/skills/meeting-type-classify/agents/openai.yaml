@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting Type Classify"
+  short_description: "Classify meeting transcripts and ask concise confirmation questions."
+  default_prompt: "Classify this meeting and ask any essential confirmation question."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "New File Triage"
+  short_description: "Triage detected files and route them to document intake."
+  default_prompt: "Triage this new file and recommend the downstream workflow."

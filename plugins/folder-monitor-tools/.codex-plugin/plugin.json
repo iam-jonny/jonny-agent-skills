@@ -1,0 +1,41 @@
+{
+  "name": "folder-monitor-tools",
+  "version": "0.1.0",
+  "description": "Folder monitoring skills and scripts for detecting new local files, triaging them, and routing them to downstream document or meeting workflows.",
+  "author": {
+    "name": "iam-jonny",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "https://github.com/iam-jonny/jonny-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "folder-monitoring",
+    "file-intake",
+    "automation",
+    "transcripts",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Folder Monitor Tools",
+    "shortDescription": "Detect and triage new local files for downstream workflows.",
+    "longDescription": "A local Codex plugin with skills and scripts for manual or scheduled folder scans, new-file triage, monitoring policy design, and routing files into document intake workflows.",
+    "developerName": "iam-jonny",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Synthesize",
+      "Automation"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Design a monitoring policy for this transcript folder.",
+      "Scan this folder for new meeting files and triage them.",
+      "Route this new file to the right document intake workflow."
+    ]
+  }
+}

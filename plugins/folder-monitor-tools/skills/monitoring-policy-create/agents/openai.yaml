@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monitoring Policy Create"
+  short_description: "Create folder monitoring policies and operating rules."
+  default_prompt: "Create a monitoring policy for this folder-based intake workflow."

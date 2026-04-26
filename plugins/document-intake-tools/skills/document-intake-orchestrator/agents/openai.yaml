@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Intake Orchestrator"
+  short_description: "Route meeting and document intake to the right workflow."
+  default_prompt: "Diagnose this document or meeting intake request and recommend the next workflow."

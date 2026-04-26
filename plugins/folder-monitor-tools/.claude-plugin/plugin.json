@@ -1,0 +1,18 @@
+{
+  "name": "folder-monitor-tools",
+  "version": "0.1.0",
+  "description": "Folder monitoring skills and scripts for detecting new local files, triaging them, and routing them to downstream document or meeting workflows.",
+  "author": {
+    "name": "iam-jonny"
+  },
+  "repository": "https://github.com/iam-jonny/jonny-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "folder-monitoring",
+    "file-intake",
+    "automation",
+    "transcripts",
+    "workflow"
+  ],
+  "skills": "./skills/"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Folder Monitor Orchestrator"
+  short_description: "Route folder monitoring work to scan, triage, or policy design."
+  default_prompt: "Design or diagnose a folder monitoring workflow for these files."
