@@ -1,4 +1,0 @@
-interface:
-  display_name: "MVV Create"
-  short_description: "Create mission, vision, and values drafts."
-  default_prompt: "Create an MVV draft for this product or company."

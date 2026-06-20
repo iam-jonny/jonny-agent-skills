@@ -1,4 +1,0 @@
-interface:
-  display_name: "PRD Create"
-  short_description: "Create pragmatic product requirements documents."
-  default_prompt: "Create a PRD from this product idea, context, and constraints."

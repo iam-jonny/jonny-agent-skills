@@ -1,4 +1,0 @@
-interface:
-  display_name: "PBI Review"
-  short_description: "Review Product Backlog Items for readiness and quality."
-  default_prompt: "Review these PBIs for clarity, acceptance criteria, and sizing risk."

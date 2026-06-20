@@ -1,4 +1,0 @@
-interface:
-  display_name: "Context Discovery"
-  short_description: "Find what context is needed before processing a document."
-  default_prompt: "Identify the missing context needed to process this meeting or document."

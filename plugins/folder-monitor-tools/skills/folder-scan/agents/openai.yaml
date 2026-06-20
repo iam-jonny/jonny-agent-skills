@@ -1,4 +1,0 @@
-interface:
-  display_name: "Folder Scan"
-  short_description: "Scan folders for stable, unprocessed files."
-  default_prompt: "Scan or plan a scan for this folder and prepare ready files for processing."

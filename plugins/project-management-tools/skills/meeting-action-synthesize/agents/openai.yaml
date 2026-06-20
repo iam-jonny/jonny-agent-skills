@@ -1,4 +1,0 @@
-interface:
-  display_name: "Meeting Action Synthesize"
-  short_description: "Turn project meetings into decisions, actions, and follow-up."
-  default_prompt: "Synthesize these project meeting notes into decisions, actions, risks, and follow-up."

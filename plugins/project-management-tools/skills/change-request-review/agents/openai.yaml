@@ -1,4 +1,0 @@
-interface:
-  display_name: "Change Request Review"
-  short_description: "Review project change requests and recommend a decision."
-  default_prompt: "Review this project change request and recommend a decision."

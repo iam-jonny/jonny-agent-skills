@@ -1,4 +1,0 @@
-interface:
-  display_name: "Business Requirements Review"
-  short_description: "Review business requirements for product readiness."
-  default_prompt: "Review these business requirements for outcomes, constraints, risks, and readiness."

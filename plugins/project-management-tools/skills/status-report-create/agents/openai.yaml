@@ -1,4 +1,0 @@
-interface:
-  display_name: "Status Report Create"
-  short_description: "Create sponsor-ready project status reports."
-  default_prompt: "Create a project status report from these updates, notes, and risks."

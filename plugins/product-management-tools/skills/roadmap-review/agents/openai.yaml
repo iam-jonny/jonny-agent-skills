@@ -1,4 +1,0 @@
-interface:
-  display_name: "Roadmap Review"
-  short_description: "Review roadmaps for strategy fit, sequencing, and feasibility."
-  default_prompt: "Review this roadmap and flag sequencing, dependency, and outcome risks."

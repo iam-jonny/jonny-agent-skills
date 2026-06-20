@@ -1,4 +1,0 @@
-interface:
-  display_name: "Artifact Lifecycle Router"
-  short_description: "Choose Draft, Update, Finalize, or Summary only."
-  default_prompt: "Route this intake to Draft, Update, Finalize, or Summary only."

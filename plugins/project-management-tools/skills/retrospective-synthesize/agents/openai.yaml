@@ -1,4 +1,0 @@
-interface:
-  display_name: "Retrospective Synthesize"
-  short_description: "Turn retrospectives into lessons, owners, and process changes."
-  default_prompt: "Synthesize this project retrospective into lessons and concrete improvements."

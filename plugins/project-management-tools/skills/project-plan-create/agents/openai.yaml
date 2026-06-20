@@ -1,4 +1,0 @@
-interface:
-  display_name: "Project Plan Create"
-  short_description: "Create practical project plans with milestones, owners, and risks."
-  default_prompt: "Create a project plan from this charter, scope, constraints, and context."

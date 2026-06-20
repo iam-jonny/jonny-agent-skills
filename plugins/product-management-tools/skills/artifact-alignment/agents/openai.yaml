@@ -1,4 +1,0 @@
-interface:
-  display_name: "Artifact Alignment"
-  short_description: "Plan stakeholder alignment and approval for PM artifacts."
-  default_prompt: "Create an alignment plan for this BRD, PRD, roadmap, or product proposal."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Stakeholder Review Synthesize"
-  short_description: "Turn stakeholder feedback into decisions, edits, and follow-up."
-  default_prompt: "Synthesize this stakeholder review feedback into decisions, action items, and follow-up."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Local Doc Context Gather"
-  short_description: "Find relevant local docs for meeting and artifact context."
-  default_prompt: "Find local documents that may be relevant to this meeting or artifact."
